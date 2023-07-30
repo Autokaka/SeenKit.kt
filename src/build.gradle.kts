@@ -25,6 +25,7 @@ kotlin {
         val commonMain by getting {
             kotlin.srcDir("common")
             dependencies {
+                implementation("org.jetbrains.kotlin:kotlin-stdlib-common:1.9.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
             }
         }
@@ -33,6 +34,7 @@ kotlin {
         }
         val androidMain by getting {
             kotlin.srcDir("android")
+            // todo android kotlin stdlib
         }
     }
 }
